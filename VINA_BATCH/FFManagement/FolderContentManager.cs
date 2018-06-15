@@ -136,7 +136,7 @@ namespace VINA_BATCH.FFManagement
             if (move)
             {
                 File.Move(Path.Combine(vinaSource, "log.txt"), Path.Combine(dest, "log.txt"));
-                File.Move(Path.Combine(vinaSource, "out.pdbqt"), Path.Combine(dest, "out.pdbqt"));
+                File.Copy(Path.Combine(vinaSource, "out.pdbqt"), Path.Combine(dest, "out.pdbqt"));
             }
             else
             {
